@@ -12,7 +12,7 @@ class ParcelController extends Controller
      */
     public function index()
     {
-        //
+        return view('parcel.index');
     }
 
     /**
@@ -20,7 +20,7 @@ class ParcelController extends Controller
      */
     public function create()
     {
-        //
+        return view('parcel.create');
     }
 
     /**
@@ -44,7 +44,7 @@ class ParcelController extends Controller
      */
     public function edit(Parcel $parcel)
     {
-        //
+        return view('parcel.edit');
     }
 
     /**
