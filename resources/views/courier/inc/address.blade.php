@@ -11,7 +11,7 @@
                     <div class="row">
                         <div class="col-md-6 col-lg-7 d-flex"><img
                                 class="w-100 fit-cover rounded-md-start rounded-top rounded-md-top-0"
-                                src="assets/img/gallery/map.svg" alt="map" /></div>
+                                src="{{ asset('courier/public/assets/img/gallery/map.svg ') }}" alt="map" /></div>
                         <div class="col-md-6 col-lg-5 d-flex flex-center">
                             <div class="card-body">
                                 <h5>Contact with us</h5>

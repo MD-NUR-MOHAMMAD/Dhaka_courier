@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row flex-center">
             <div class="bg-holder bg-size"
-                style="background-image:url(assets/img/gallery/quote.png);background-position:top;background-size:auto;margin-left:-270px;margin-top:-45px;">
+                style="background-image:url({{ asset('courier/public/assets/img/gallery/quote.png ') }});background-position:top;background-size:auto;margin-left:-270px;margin-top:-45px;">
             </div>
             <!--/.bg-holder-->
 
@@ -32,7 +32,7 @@
                                                 class="fas fa-star text-primary me-1"></i><i
                                                 class="fas fa-star text-primary me-1"></i></div>
                                         <div class="d-flex align-items-center"><img class="img-fluid"
-                                                src="assets/img/icons/avatar.png" alt="" />
+                                                src="{{ asset('courier/public/assets/img/icons/avatar.png ') }}" alt="" />
                                             <div class="flex-1 ms-3">
                                                 <h6 class="mb-0 fs--1 text-1000 fw-medium">Yves Tanguy</h6>
                                                 <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
@@ -58,7 +58,7 @@
                                                 class="fas fa-star text-primary me-1"></i><i
                                                 class="fas fa-star text-primary me-1"></i></div>
                                         <div class="d-flex align-items-center"><img class="img-fluid"
-                                                src="assets/img/icons/avatar.png" alt="" />
+                                                src="{{ asset('courier/public/assets/img/icons/avatar.png ') }}" alt="" />
                                             <div class="flex-1 ms-3">
                                                 <h6 class="mb-0 fs--1 text-1000 fw-medium">Kim Young Jou</h6>
                                                 <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
@@ -84,7 +84,7 @@
                                                 class="fas fa-star text-primary me-1"></i><i
                                                 class="fas fa-star text-primary me-1"></i></div>
                                         <div class="d-flex align-items-center"><img class="img-fluid"
-                                                src="assets/img/icons/avatar.png" alt="" />
+                                                src="{{ asset('courier/public/assets/img/icons/avatar.png ') }}" alt="" />
                                             <div class="flex-1 ms-3">
                                                 <h6 class="mb-0 fs--1 text-1000 fw-medium">Yves Tanguy</h6>
                                                 <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
@@ -114,7 +114,7 @@
                                                 class="fas fa-star text-primary me-1"></i><i
                                                 class="fas fa-star text-primary me-1"></i></div>
                                         <div class="d-flex align-items-center"><img class="img-fluid"
-                                                src="assets/img/icons/avatar.png" alt="" />
+                                                src="{{ asset('courier/public/assets/img/icons/avatar.png ') }}" alt="" />
                                             <div class="flex-1 ms-3">
                                                 <h6 class="mb-0 fs--1 text-1000 fw-medium">Yves Tanguy</h6>
                                                 <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
@@ -140,7 +140,7 @@
                                                 class="fas fa-star text-primary me-1"></i><i
                                                 class="fas fa-star text-primary me-1"></i></div>
                                         <div class="d-flex align-items-center"><img class="img-fluid"
-                                                src="assets/img/icons/avatar.png" alt="" />
+                                                src="{{ asset('courier/public/assets/img/icons/avatar.png ') }}" alt="" />
                                             <div class="flex-1 ms-3">
                                                 <h6 class="mb-0 fs--1 text-1000 fw-medium">Kim Young Jou</h6>
                                                 <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
@@ -166,7 +166,7 @@
                                                 class="fas fa-star text-primary me-1"></i><i
                                                 class="fas fa-star text-primary me-1"></i></div>
                                         <div class="d-flex align-items-center"><img class="img-fluid"
-                                                src="assets/img/icons/avatar.png" alt="" />
+                                                src="{{ asset('courier/public/assets/img/icons/avatar.png ') }}" alt="" />
                                             <div class="flex-1 ms-3">
                                                 <h6 class="mb-0 fs--1 text-1000 fw-medium">Yves Tanguy</h6>
                                                 <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
@@ -196,7 +196,7 @@
                                                 class="fas fa-star text-primary me-1"></i><i
                                                 class="fas fa-star text-primary me-1"></i></div>
                                         <div class="d-flex align-items-center"><img class="img-fluid"
-                                                src="assets/img/icons/avatar.png" alt="" />
+                                                src="{{ asset('courier/public/assets/img/icons/avatar.png ') }}" alt="" />
                                             <div class="flex-1 ms-3">
                                                 <h6 class="mb-0 fs--1 text-1000 fw-medium">Yves Tanguy</h6>
                                                 <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
@@ -222,7 +222,7 @@
                                                 class="fas fa-star text-primary me-1"></i><i
                                                 class="fas fa-star text-primary me-1"></i></div>
                                         <div class="d-flex align-items-center"><img class="img-fluid"
-                                                src="assets/img/icons/avatar.png" alt="" />
+                                                src="{{ asset('courier/public/assets/img/icons/avatar.png ') }}" alt="" />
                                             <div class="flex-1 ms-3">
                                                 <h6 class="mb-0 fs--1 text-1000 fw-medium">Kim Young Jou</h6>
                                                 <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
@@ -248,7 +248,7 @@
                                                 class="fas fa-star text-primary me-1"></i><i
                                                 class="fas fa-star text-primary me-1"></i></div>
                                         <div class="d-flex align-items-center"><img class="img-fluid"
-                                                src="assets/img/icons/avatar.png" alt="" />
+                                                src="{{ asset('courier/public/assets/img/icons/avatar.png ') }}" alt="" />
                                             <div class="flex-1 ms-3">
                                                 <h6 class="mb-0 fs--1 text-1000 fw-medium">Yves Tanguy</h6>
                                                 <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>

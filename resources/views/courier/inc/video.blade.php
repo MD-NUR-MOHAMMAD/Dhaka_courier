@@ -3,10 +3,10 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="card bg-dark text-white py-4 py-sm-0"><img class="w-100" src="assets/img/gallery/video.png"
+                <div class="card bg-dark text-white py-4 py-sm-0"><img class="w-100" src="{{ asset('courier/public/assets/img/gallery/video.png ')}}"
                         alt="video" />
                     <div class="card-img-overlay bg-dark-gradient d-flex flex-column flex-center"><img
-                            src="assets/img/icons/play.png" width="80" alt="play" />
+                            src="{{ asset('courier/public/assets/img/icons/play.png ')}}" width="80" alt="play" />
                         <h5 class="text-primary">FASTEST DELIVERY</h5>
                         <p class="text-center">You can get your valuable item in the fastest period of<br
                                 class="d-none d-sm-block" />time with safety. Because your emergency<br
