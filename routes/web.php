@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route ::get('/', [HomeController::class, 'index'])->name('home');
+Route ::get('employee', [HomeController::class, 'employee'])->name('home');
 
 //HomeController
 Route ::get('user', [UserController::class, 'index'])->name('home');
@@ -24,9 +25,9 @@ Route ::get('user/edit', [UserController::class, 'edit'])->name('home');
 Route ::get('user/update', [UserController::class, 'update'])->name('home');
 
 //EmployeeController
-Route ::get('employee', [EmployeeController::class, 'index']);
-Route ::get('employee/create', [EmployeeController::class, 'create'])->name('home');
-Route ::get('employee/edit', [EmployeeController::class, 'edit'])->name('home');
+// Route ::get('employee', [EmployeeController::class, 'index']);
+// Route ::get('employee/create', [EmployeeController::class, 'create'])->name('home');
+// Route ::get('employee/edit', [EmployeeController::class, 'edit'])->name('home');
 
 //ParcelController
 Route ::get('parcel', [ParcelController::class, 'index']);

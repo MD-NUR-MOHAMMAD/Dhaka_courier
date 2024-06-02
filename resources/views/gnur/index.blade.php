@@ -3,8 +3,5 @@
 
 @endsection
 @section('content')
-
-    @include('gnur.inc.nav')
-    @include('gnur.inc.main')
-    @include('gnur.inc.button')
+    <h1>hello</h1>
 @endsection

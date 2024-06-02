@@ -30,7 +30,25 @@
     <div id="pcoded" class="pcoded">
         <div class="pcoded-overlay-box"></div>
         <div class="pcoded-container navbar-wrapper">
-            @yield('content')
+            @include('gnur.inc.nav')
+            <div class="pcoded-main-container">
+                <div class="pcoded-wrapper">
+                    @include('gnur.inc.navleft')
+                    <div class="pcoded-content">
+                        <div class="pcoded-inner-content">
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <div class="page-body">
+                                        @yield('content')
+                                    </div>
+                                </div>
+                                <div id="styleSelector"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @include('gnur.inc.footer')
         </div>
     </div>
 

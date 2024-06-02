@@ -12,15 +12,19 @@ class HomeController extends Controller
      */
     public function index()
     {
-       return view('gnur.index');
+       return view('courier.index');
     }
 
     /**
      * Show the form for creating a new resource.
      */
+    public function employee()
+    {
+        return view('gnur.index');
+    }
     public function create()
     {
-        //
+       //
     }
 
     /**
@@ -62,4 +66,5 @@ class HomeController extends Controller
     {
         //
     }
+   
 }
