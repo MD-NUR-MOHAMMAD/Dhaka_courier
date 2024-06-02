@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route ::get('/', [HomeController::class, 'index'])->name('home');
+Route ::get('/', [HomeController::class, 'index'])->name('index');
 Route ::get('employee', [HomeController::class, 'employee'])->name('home');
 
 //HomeController
@@ -39,11 +39,15 @@ Route ::get('payment', [PaymentController::class, 'index']);
 Route ::get('payment/create', [PaymentController::class, 'create']);
 Route ::get('payment/edit', [PaymentController::class, 'edit']);
 
+
 //
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('admin.dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/bijoy', function () {
+    return view('admin.bijoy');
+})->middleware(['auth', 'verified'])->name('bijoy');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

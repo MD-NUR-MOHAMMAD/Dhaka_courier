@@ -6,7 +6,7 @@
                 class="navbar-toggler-icon"> </span></button>
         <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
-                <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+                <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="{{route('index')}}">Home</a></li>
                 <li class="nav-item px-2"><a class="nav-link" href="#services">Our Services</a></li>
                 <li class="nav-item px-2"><a class="nav-link" href="#findUs">Find Us</a></li>
             </ul>
@@ -20,12 +20,18 @@
                             style="background:#FDF1DF;" />
                     </form>
                 </div>
-            </div><a class="btn btn-primary order-1 order-lg-0 ms-lg-3" href="#!">Contact Us</a>
+            </div>
+            <a class="btn btn-primary" href="#!">Contact Us</a>
+            <a class="btn btn-info order-1 order-lg-0 ms-lg-3" href="#!"> Login</a>
+            <a class="btn btn-success order-1 order-lg-0 ms-lg-3" href="#!">Register</a>
             <form class="d-flex my-3 d-block d-lg-none">
                 <input class="form-control me-2 border-200 bg-light" type="search" placeholder="Search"
                     aria-label="Search" />
                 <button class="btn btn-outline-primary" type="submit">Search</button>
             </form>
+
+            
+            
         </div>
     </div>
 </nav>
