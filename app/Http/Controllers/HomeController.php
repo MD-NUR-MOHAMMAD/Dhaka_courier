@@ -12,7 +12,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-       return view('courier.index');
+       return view('admin.index');
     }
 
     /**
@@ -66,5 +66,5 @@ class HomeController extends Controller
     {
         //
     }
-   
+
 }
