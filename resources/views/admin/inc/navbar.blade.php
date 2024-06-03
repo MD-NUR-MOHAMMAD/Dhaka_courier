@@ -83,7 +83,14 @@
                     </a>
                     <a class="dropdown-item">
                         <i class="ti-power-off text-primary"></i>
-                        Logout
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <x-dropdown-link :href="route('logout')"
+                                    onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                {{ __('Log Out') }}
+                            </x-dropdown-link>
+                        </form>
                     </a>
                 </div>
             </li>
