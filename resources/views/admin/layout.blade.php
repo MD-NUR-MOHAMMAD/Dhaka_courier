@@ -15,9 +15,24 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('skydash/js/select.dataTables.min.css') }}">
     <link rel="stylesheet" href="{{ asset('skydash/css/vertical-layout-light/style.css') }}">
     <link rel="shortcut icon" href="{{ asset('skydash/images/favicon.png') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    @yield('content')
+    <div class="container-scroller">
+        @include('admin.inc.navbar')
+        <div class="container-fluid page-body-wrapper">
+            @include('admin.inc.tsetting')
+            @include('admin.inc.right-sidebar')
+            @include('admin.inc.side-nav')
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    @yield('content')
+                </div>
+                @include('admin.inc.footer')
+            </div>
+        </div>
+    </div>
+    
     <script src="{{ asset('skydash/vendors/js/vendor.bundle.base.js') }}"></script>
     <script src="{{ asset('skydash/vendors/chart.js/Chart.min.js') }}"></script>
     <script src="{{ asset('skydash/vendors/datatables.net/jquery.dataTables.js') }}"></script>

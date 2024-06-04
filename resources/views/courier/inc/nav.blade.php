@@ -22,8 +22,20 @@
                 </div>
             </div>
             <a class="btn btn-primary" href="#!">Contact Us</a>
-            <a class="btn btn-info order-1 order-lg-0 ms-lg-3" href="#!"> Login</a>
-            <a class="btn btn-success order-1 order-lg-0 ms-lg-3" href="#!">Register</a>
+
+            @guest
+            <a class="btn btn-success order-1 order-lg-0 ms-lg-3" href="{{route('login')}}">login</a>
+            <a class="btn btn-success order-1 order-lg-0 ms-lg-3" href="{{route('register')}}">Register</a>
+            @endguest
+            @auth
+            {{-- <a class="btn btn-success order-1 order-lg-0 ms-lg-3" href="{{route('dashboard')}}">Dashboard</a> --}}
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <button type="submit" class="btn btn-success order-1 order-lg-0 ms-lg-3">Logout</button>
+            </form>
+            @endauth
+            
+            
             <form class="d-flex my-3 d-block d-lg-none">
                 <input class="form-control me-2 border-200 bg-light" type="search" placeholder="Search"
                     aria-label="Search" />

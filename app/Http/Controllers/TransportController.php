@@ -12,7 +12,7 @@ class TransportController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.transport.index', ['transports' => Transport::all()]);
     }
 
     /**
@@ -20,7 +20,7 @@ class TransportController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.transport.create');
     }
 
     /**
@@ -28,7 +28,8 @@ class TransportController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $transport = Transport::create($request->all());
+        return redirect()->back();
     }
 
     /**
@@ -44,7 +45,7 @@ class TransportController extends Controller
      */
     public function edit(Transport $transport)
     {
-        //
+        return view('admin.transport.edit', ['transport' => $transport]);
     }
 
     /**
@@ -52,7 +53,8 @@ class TransportController extends Controller
      */
     public function update(Request $request, Transport $transport)
     {
-        //
+        $transport->update($request->all());
+        return redirect()->back();
     }
 
     /**
@@ -60,6 +62,7 @@ class TransportController extends Controller
      */
     public function destroy(Transport $transport)
     {
-        //
+        $transport->delete();
+        return redirect()->back();
     }
 }
