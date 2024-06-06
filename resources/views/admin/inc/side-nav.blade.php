@@ -20,7 +20,11 @@
                     </li>
                 </ul>
             </div>
+<<<<<<< HEAD
         </li>
+=======
+        </li> 
+>>>>>>> 406187b7bd9fa82af0ec6be913aa3f18f51b2d9d
         @endif
         <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false"

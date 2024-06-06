@@ -5,10 +5,17 @@
 @section('content')
     <div class="container-fluid">
         <div class="card-body">
+<<<<<<< HEAD
             <h1 class="card-title">Insert form</h1>
             {{-- <p class="card-description">
                 Basic form layout
             </p> --}}
+=======
+            <h4 class="card-title">Default form</h4>
+            <p class="card-description">
+                Basic form layout
+            </p>
+>>>>>>> 406187b7bd9fa82af0ec6be913aa3f18f51b2d9d
             <form action="{{ route('transport.store') }}" class="forms-sample" method="POST">
                 @csrf
                 <div class="form-group">
@@ -22,7 +29,11 @@
                         value="{{ old('delivery_boy') }}">
                 </div>
                 <div class="form-group">
+<<<<<<< HEAD
                     <label for="exampleInputForm">From</label>
+=======
+                    <label for="exampleInputForm">Form</label>
+>>>>>>> 406187b7bd9fa82af0ec6be913aa3f18f51b2d9d
                     <input name="address_from" type="text" class="form-control" id="exampleInputForm"
                         value="{{ old('address_from') }}">
                 </div>
