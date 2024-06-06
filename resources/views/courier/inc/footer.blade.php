@@ -27,12 +27,12 @@
     <!-- end of .container-->
 
 </section>
-<section class="bg-900 pb-0 pt-5">
+<section class=" pb-0 pt-5" style="background-color: #12493d;">
 
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-12 col-lg-6 mb-4 order-0 order-sm-0"><a class="text-decoration-none"
-                    href="#"><img src="{{ asset('courier/public/assets/img/gallery/footer-logo.png ')}}" height="51" alt="" /></a>
+                    href="#"><img src="{{ asset('courier/public/assets/img/gallery/co.png ')}}" height="51" alt="" /></a>
                 <p class="text-500 my-4">The most trusted Courier<br />company in your area.</p>
             </div>
             <div class="col-6 col-sm-4 col-lg-2 mb-3 order-2 order-sm-1">

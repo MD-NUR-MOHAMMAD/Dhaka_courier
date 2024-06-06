@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
-    <div class="container"><a class="navbar-brand" href="index.html"><img src="{{ asset('courier/public/assets/img/gallery/logo.png ')}}" height="45"
+    <div class="container"><a class="navbar-brand" href="index.html"><img src="{{ asset('courier/public/assets/img/gallery/co.png')}}" height="45"
                 alt="logo" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
@@ -22,8 +22,20 @@
                 </div>
             </div>
             <a class="btn btn-primary" href="#!">Contact Us</a>
-            <a class="btn btn-info order-1 order-lg-0 ms-lg-3" href="#!"> Login</a>
-            <a class="btn btn-success order-1 order-lg-0 ms-lg-3" href="#!">Register</a>
+
+            @guest
+            <a class="btn btn-success order-1 order-lg-0 ms-lg-3" href="{{route('login')}}">login</a>
+            <a class="btn btn-success order-1 order-lg-0 ms-lg-3" href="{{route('register')}}">Register</a>
+            @endguest
+            @auth
+            {{-- <a class="btn btn-success order-1 order-lg-0 ms-lg-3" href="{{route('dashboard')}}">Dashboard</a> --}}
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <button type="submit" class="btn btn-success order-1 order-lg-0 ms-lg-3">Logout</button>
+            </form>
+            @endauth
+            
+            
             <form class="d-flex my-3 d-block d-lg-none">
                 <input class="form-control me-2 border-200 bg-light" type="search" placeholder="Search"
                     aria-label="Search" />

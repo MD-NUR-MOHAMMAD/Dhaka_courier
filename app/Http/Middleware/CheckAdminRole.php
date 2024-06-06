@@ -18,7 +18,7 @@ class CheckAdminRole
     {
         if (Auth::check()) {
             // Check if the authenticated user has the 'admin' role
-            if (Auth::user()->roles === 'admin') {
+            if (Auth::user()->roles == 'admin') {
                 return $next($request);
             }
         }

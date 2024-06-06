@@ -1,4 +1,4 @@
-@extends('courier.layout', ['title' => 'Todo List'])
+@extends('courier.layout', ['title' => 'Dhaka_Courier'])
 @section('head')
     
 @endsection

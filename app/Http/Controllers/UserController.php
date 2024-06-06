@@ -51,7 +51,8 @@ class UserController extends Controller
      */
     public function update()
     {
-        return view('gnur.users.update');
+     
+        // return view('gnur.users.update');
     }
 
     /**

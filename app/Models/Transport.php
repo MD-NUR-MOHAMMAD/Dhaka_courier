@@ -9,7 +9,16 @@ use App\Models\Parcel;
 class Transport extends Model
 {
     use HasFactory;
-    public function parcels(){
+    protected $fillable = [
+        'company',
+        'delivery_boy',
+        'address_from',
+        'address_to',
+        'mobile',
+        'nid',
+    ];
+    public function parcels()
+    {
         return $this->belongsToMany(Parcel::class);
     }
 }
